@@ -2,8 +2,13 @@ version: '3'
 
 services:
   db:
-    image: postgres
+    container_name: project_name_db
+    image: postgres:12.4
+    env_file:
+        - .env
+
   web:
+    container_name: project_name_web
     build: .
     command: gunicorn project_name.wsgi:application --bind 0.0.0.0:8000 --name project_name
     volumes:

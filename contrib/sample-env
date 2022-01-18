@@ -1,7 +1,9 @@
 
 SECRET_KEY=THIS_IS_NOT_A_GOOD_SECRET
 DEBUG=True
-ALLOWED_HOSTS=127.0.0.1, .localhost, .herokuapp.com
+ALLOWED_HOSTS=127.0.0.1, .localhost, 0.0.0.0, .herokuapp.com
+
+DATABASE_URL=postgres://postgres:postgres@db:5432/postgres
 
 EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
 EMAIL_HOST=localhost
