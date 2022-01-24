@@ -1,5 +1,16 @@
 # django-boilerplate
-django-boilerplate
+
+This boilerplate allow you to quickly setup any Django project and deploy a prototype as soon as possible.
+
+### That includes:
+* DockerFiles
+* Docker compose file
+* Heroku config file
+* Pytest config file
+* Gunicorn
+* PostgreSQL
+* Sets vars env properly
+* Support static files by whitenoise lib
 
 
 ### Before run the:
@@ -30,7 +41,7 @@ django-boilerplate
     * wsgi.py
 
 #### Build the project:
-* `docker-compose build --no-cache `
+* `docker-compose build --no-cache`
 
 #### Run the project:
 * `docker-compose up`
