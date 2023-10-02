@@ -41,8 +41,8 @@ This boilerplate allow you to quickly setup any Django project and deploy a prot
     * wsgi.py
 
 #### Build the project:
-* `docker-compose build --no-cache`
+* `docker compose build --no-cache`
 
 #### Run the project:
-* `docker-compose up`
+* `docker compose up`
 *  If everything works then open your browser and access http://0.0.0.0:8000/ 
